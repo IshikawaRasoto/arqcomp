@@ -18,7 +18,7 @@ architecture arq_registrador16bits of registrador16bits is
     begin
         process(clk, reset, wr_enable)
         begin
-            if rst='1' then
+            if reset='1' then
                 reg <= "0000000000000000";
             elsif wr_enable='1' then
                 if rising_edge(clk) then

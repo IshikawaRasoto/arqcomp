@@ -1,0 +1,25 @@
+v 4
+file . "ula_regs_tb.vhd" "cad1fc5f78ef693e7c119bacfc207546dd3e7804" "20240502000645.439":
+  entity ula_regs_tb at 1( 0) + 0 on 33;
+  architecture arch_ula_regs_tb of ula_regs_tb at 9( 126) + 0 on 34;
+file . "bancoRegistradores.vhd" "3a82bfe891ca5181d2f3d23e0feee0bbce21f6ba" "20240501041407.361":
+  entity bancoregistradores at 1( 0) + 0 on 21;
+  architecture arq_bancoregistradores of bancoregistradores at 19( 571) + 0 on 22;
+file . "ULA16bits.vhd" "5b0c043d3c3af00151a2743c8429a753175aef1d" "20240501041209.854":
+  entity ula16bits at 1( 0) + 0 on 17;
+  architecture arch_ula16bits of ula16bits at 16( 374) + 0 on 18;
+file . "logic.vhd" "9950cea93d6bc2cb0b3cc6cd806aea61bc89aafc" "20240501041147.924":
+  entity logic at 1( 0) + 0 on 13;
+  architecture arch_logic of logic at 13( 267) + 0 on 14;
+file . "arithmetic.vhd" "cc3da722fec2282bc60a44a13e58a81e9987a9c3" "20240501041136.953":
+  entity arithmetic at 4( 44) + 0 on 11;
+  architecture arch_arithmetic of arithmetic at 16( 316) + 0 on 12;
+file . "mux16x4bits.vhd" "a6bcee3c31668d040645cc079365a245985b44fe" "20240501041157.201":
+  entity mux16x4bits at 1( 0) + 0 on 15;
+  architecture arch_mux16x4bits of mux16x4bits at 15( 335) + 0 on 16;
+file . "registrador16bits.vhd" "aa1b9ef774f75eaa213895ba5e0f1ce43ce456ba" "20240501041246.979":
+  entity registrador16bits at 1( 0) + 0 on 19;
+  architecture arq_registrador16bits of registrador16bits at 15( 332) + 0 on 20;
+file . "ula_regs.vhd" "fbdbae9d5b276b9e96de845035861f53c24cd3d1" "20240501042705.150":
+  entity ula_regs at 1( 0) + 0 on 23;
+  architecture arch_ula_regs of ula_regs at 23( 717) + 0 on 24;
