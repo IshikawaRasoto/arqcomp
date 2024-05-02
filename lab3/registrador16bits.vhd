@@ -24,7 +24,6 @@ architecture arq_registrador16bits of registrador16bits is
                 if rising_edge(clk) then
                     reg <= A;
                 end if;
-                reg <= A;
             end if;
         end process;
 

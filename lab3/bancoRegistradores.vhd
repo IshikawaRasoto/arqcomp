@@ -32,8 +32,7 @@ architecture arq_bancoRegistradores of bancoRegistradores is
     signal we_00, we_01, we_02, we_03, we_04, we_05, we_06, we_07: std_logic;
 
     begin
-
-
+        
         -- Lista dos Registradores
         reg0 : registrador16bits port map(clk, rst, we_00, write_data, S_00);
         reg1 : registrador16bits port map(clk, rst, we_01, write_data, S_01);
