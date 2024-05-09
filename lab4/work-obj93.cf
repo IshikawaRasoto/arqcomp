@@ -1,10 +1,19 @@
 v 4
-file . "maq2estados_tb.vhd" "f902fe90048e0fcdd3c88676685bd38fc9532c56" "20240509190207.156":
-  entity maq2estados_tb at 1( 0) + 0 on 21;
-  architecture arch_maq2estados_tb of maq2estados_tb at 8( 115) + 0 on 22;
-file . "pc.vhd" "fee1808b059882ac5992fe990388dcfd1fbc5be4" "20240509183508.811":
-  entity pc at 1( 0) + 0 on 13;
-  architecture arch_pc of pc at 15( 258) + 0 on 14;
+file . "uc_tb.vhd" "33063db2a3b6f8609b32a03f4d104e1afa1f23d2" "20240509200916.237":
+  entity uc_tb at 1( 0) + 0 on 27;
+  architecture arch_uc_tb of uc_tb at 8( 106) + 0 on 28;
+file . "rom.vhd" "2d3e4746fd1226bc1a4b3b899c2e2b2ba614bca9" "20240509200857.774":
+  entity rom at 1( 0) + 0 on 23;
+  architecture arc_rom of rom at 11( 205) + 0 on 24;
 file . "maq2estados.vhd" "6c553df9f1286b11609b3444a28bc65f0629c5ec" "20240509185828.364":
   entity maq2estados at 1( 0) + 0 on 15;
   architecture arch_maq2estados of maq2estados at 12( 163) + 0 on 16;
+file . "pc.vhd" "fee1808b059882ac5992fe990388dcfd1fbc5be4" "20240509183508.811":
+  entity pc at 1( 0) + 0 on 13;
+  architecture arch_pc of pc at 15( 258) + 0 on 14;
+file . "maq2estados_tb.vhd" "f902fe90048e0fcdd3c88676685bd38fc9532c56" "20240509190207.156":
+  entity maq2estados_tb at 1( 0) + 0 on 21;
+  architecture arch_maq2estados_tb of maq2estados_tb at 8( 115) + 0 on 22;
+file . "uc.vhd" "ee5666b4048dd47f696c62c9581c98adc654e3a4" "20240509200909.709":
+  entity uc at 1( 0) + 0 on 25;
+  architecture arch_uc of uc at 13( 238) + 0 on 26;
