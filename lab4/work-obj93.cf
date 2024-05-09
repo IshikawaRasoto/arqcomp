@@ -1,0 +1,10 @@
+v 4
+file . "maq2estados_tb.vhd" "f902fe90048e0fcdd3c88676685bd38fc9532c56" "20240509190207.156":
+  entity maq2estados_tb at 1( 0) + 0 on 21;
+  architecture arch_maq2estados_tb of maq2estados_tb at 8( 115) + 0 on 22;
+file . "pc.vhd" "fee1808b059882ac5992fe990388dcfd1fbc5be4" "20240509183508.811":
+  entity pc at 1( 0) + 0 on 13;
+  architecture arch_pc of pc at 15( 258) + 0 on 14;
+file . "maq2estados.vhd" "6c553df9f1286b11609b3444a28bc65f0629c5ec" "20240509185828.364":
+  entity maq2estados at 1( 0) + 0 on 15;
+  architecture arch_maq2estados of maq2estados at 12( 163) + 0 on 16;

@@ -18,10 +18,10 @@ begin
 	process(clk_i, rst_i)
 	begin
 
-		if (rst_i) then
-			data_s <= '0';
+		if (rst_i = '1') then
+			dado_s <= '0';
 		elsif rising_edge(clk_i) then
-			data_s <= not estado;
+			dado_s <= not dado_s;
 		end if;
 	end process;
 
