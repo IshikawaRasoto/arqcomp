@@ -12,6 +12,7 @@ entity ulaacumuladora is
         flag_bigger: out std_logic;
         flag_equals: out std_logic;
         op: in std_logic_vector(1 downto 0);
+        acumulador_value: out std_logic_vector(15 downto 0);
         data_i: in std_logic_vector(15 downto 0);
         data_o: out std_logic_vector(15 downto 0)
     );
@@ -48,6 +49,8 @@ begin
     data_b <= unsigned(data_i);
     data_s <= data_b when acumulador_source = '1' else data_r;
     data_o <= std_logic_vector(data_r);
+
+    acumulador_value <= std_logic_vector(data_a);
 
     acumulador: registrador16bits port map(
         clk => clk,

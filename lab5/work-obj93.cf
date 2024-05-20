@@ -1,25 +1,40 @@
 v 4
-file . "ULA16bits.vhd" "5cc978389e8ef87642393f0a8584210080345f94" "20240518010317.406":
-  entity ula16bits at 1( 0) + 0 on 23;
-  architecture arch_ula16bits of ula16bits at 16( 359) + 0 on 24;
-file . "mux16x4bits.vhd" "d1873b15cdfd35a84a523b7b43400b09aa71b42c" "20240518010258.905":
-  entity mux16x4bits at 1( 0) + 0 on 19;
-  architecture arch_mux16x4bits of mux16x4bits at 15( 321) + 0 on 20;
-file . "arithmetic.vhd" "9484826d480af80a904b002298ca2ebf9d067f6c" "20240518010245.553":
-  entity arithmetic at 4( 41) + 0 on 15;
-  architecture arch_arithmetic of arithmetic at 16( 301) + 0 on 16;
-file . "maqestados.vhd" "0636a365b6f3a813711c8eb641958c97e1b67e59" "20240517112455.635":
-  entity maqestados at 1( 0) + 0 on 11;
-  architecture arch_maqestados of maqestados at 13( 199) + 0 on 12;
-file . "ulaacumuladora.vhd" "8b623c4027a3b7c43b19f792327a57fbe4fb66eb" "20240518010350.399":
-  entity ulaacumuladora at 1( 0) + 0 on 27;
-  architecture arch_ulaacumuladora of ulaacumuladora at 20( 519) + 0 on 28;
-file . "logic.vhd" "6ce534c36cbe7b7d7c9d3ba249b11aefa300a0ed" "20240518010253.427":
-  entity logic at 1( 0) + 0 on 17;
-  architecture arch_logic of logic at 13( 255) + 0 on 18;
-file . "registrador16bits.vhd" "463aeecd5d53154623bdf2b4f8be591e50d184d2" "20240518010305.738":
-  entity registrador16bits at 1( 0) + 0 on 21;
-  architecture arq_registrador16bits of registrador16bits at 15( 318) + 0 on 22;
-file . "bancoRegistradores.vhd" "10a897fcb9218112efdecabae55b96b9d579a75b" "20240518010326.742":
-  entity bancoregistradores at 1( 0) + 0 on 25;
-  architecture arq_bancoregistradores of bancoregistradores at 19( 553) + 0 on 26;
+file . "calculadora.vhd" "a0b5b8b91101089417b98c5b749eb1085ad690da" "20240520011430.540":
+  entity calculadora at 1( 0) + 0 on 703;
+  architecture arch_calculadora of calculadora at 18( 457) + 0 on 704;
+file . "pc.vhd" "fee1808b059882ac5992fe990388dcfd1fbc5be4" "20240520011430.495":
+  entity pc at 1( 0) + 0 on 699;
+  architecture arch_pc of pc at 15( 258) + 0 on 700;
+file . "uc.vhd" "d5a3685d41853bbe7bbfd08842cf60e75cf31869" "20240520011430.516":
+  entity uc at 1( 0) + 0 on 701;
+  architecture arch_uc of uc at 28( 706) + 0 on 702;
+file . "bancoRegistradores.vhd" "3a31a111360a47090a50419cb9becda6c0ac1a8a" "20240520011430.430":
+  entity bancoregistradores at 1( 0) + 0 on 693;
+  architecture arq_bancoregistradores of bancoregistradores at 17( 439) + 0 on 694;
+file . "registrador16bits.vhd" "463aeecd5d53154623bdf2b4f8be591e50d184d2" "20240520011430.342":
+  entity registrador16bits at 1( 0) + 0 on 685;
+  architecture arq_registrador16bits of registrador16bits at 15( 318) + 0 on 686;
+file . "logic.vhd" "6ce534c36cbe7b7d7c9d3ba249b11aefa300a0ed" "20240520011430.321":
+  entity logic at 1( 0) + 0 on 683;
+  architecture arch_logic of logic at 13( 255) + 0 on 684;
+file . "ulaacumuladora.vhd" "d7f53c435bd557d1e050ac6c95ffd6e9902d1dd1" "20240520011430.406":
+  entity ulaacumuladora at 1( 0) + 0 on 691;
+  architecture arch_ulaacumuladora of ulaacumuladora at 21( 580) + 0 on 692;
+file . "maqestados.vhd" "0636a365b6f3a813711c8eb641958c97e1b67e59" "20240520011430.452":
+  entity maqestados at 1( 0) + 0 on 695;
+  architecture arch_maqestados of maqestados at 13( 199) + 0 on 696;
+file . "arithmetic.vhd" "9484826d480af80a904b002298ca2ebf9d067f6c" "20240520011430.301":
+  entity arithmetic at 4( 41) + 0 on 681;
+  architecture arch_arithmetic of arithmetic at 16( 301) + 0 on 682;
+file . "mux16x4bits.vhd" "d1873b15cdfd35a84a523b7b43400b09aa71b42c" "20240520011430.363":
+  entity mux16x4bits at 1( 0) + 0 on 687;
+  architecture arch_mux16x4bits of mux16x4bits at 15( 321) + 0 on 688;
+file . "ULA16bits.vhd" "5cc978389e8ef87642393f0a8584210080345f94" "20240520011430.384":
+  entity ula16bits at 1( 0) + 0 on 689;
+  architecture arch_ula16bits of ula16bits at 16( 359) + 0 on 690;
+file . "rom.vhd" "d5e236c4ac827b0951e4262140f0f05c3122c802" "20240520011430.473":
+  entity rom at 1( 0) + 0 on 697;
+  architecture arc_rom of rom at 14( 251) + 0 on 698;
+file . "calculadora_tb.vhd" "f45aa396aa6484525ddd851b6a60bc7f2c88045f" "20240520011430.569":
+  entity calculadora_tb at 1( 0) + 0 on 705;
+  architecture arch_calculadora_tb of calculadora_tb at 8( 116) + 0 on 706;
