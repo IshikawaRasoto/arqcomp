@@ -1,0 +1,29 @@
+Codificação 
+
+Laboratório 5 de Arquitetura de Computadores
+
+Alunos: Nicolas Riuchi Oda e Rafael Rasoto
+
+-- Endereços dos Registradores
+
+R0 0000
+R1 0001
+R2 0010
+R3 0011
+R4 0100
+R5 0101
+R6 0110
+R7 0111
+A  1010
+
+-- Operações
+
+NOP: 0000 xxxx xxxx xxxx
+MOV: 0001 dddd ssss xxxx
+LD : 0010 dddd cccc cccc -- dddd NÃO PODE SER O ACUMULADOR
+ADD: 0011 dddd ssss xxxx
+SUB: 0100 dddd ssss xxxx
+AND: 0101 dddd ssss xxxx
+OR : 0110 dddd ssss xxxx
+CMP: 0111 dddd ssss xxxx
+JMP: 1000 xxxx xxcc cccc    
