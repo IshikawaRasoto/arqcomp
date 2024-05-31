@@ -18,7 +18,7 @@ A  1010
 
 -- Operações
 
-NOP: 0000 xxxx xxxx xxxx
+NOP: 0000 xxxx 0100 1010
 MOV: 0001 dddd ssss xxxx
 LD : 0010 dddd cccc cccc -- dddd NÃO PODE SER O ACUMULADOR
 ADD: 0011 dddd ssss xxxx

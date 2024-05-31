@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
-entity calculadora is
+entity micro is
     port(
         reset : in std_logic;
         clk : in std_logic;
@@ -15,12 +15,15 @@ entity calculadora is
     );
 end entity;
 
-architecture arch_calculadora of calculadora is
+architecture arch_micro of micro is
 
     component uc is
         port(
             clk : in std_logic;
             rst : in std_logic;
+            flag_zero : in std_logic;
+            flag_bigger : in std_logic;
+            flag_carry_out : in std_logic;
             codigo_operacao : out unsigned(15 downto 0);
             maquina_estados_out : out unsigned(1 downto 0);
             pc_value_o : out unsigned(6 downto 0);
@@ -55,7 +58,7 @@ architecture arch_calculadora of calculadora is
             wr_enable: in std_logic;
             flag_zero: out std_logic;
             flag_bigger: out std_logic;
-            flag_equals: out std_logic;
+            carry_out: out std_logic;
             op: in std_logic_vector(1 downto 0);
             acumulador_value: out std_logic_vector(15 downto 0);
             data_i: in std_logic_vector(15 downto 0);
@@ -63,6 +66,14 @@ architecture arch_calculadora of calculadora is
         );
     end component;
 
+
+    -- Flags
+    signal s_flag_zero: std_logic;
+    signal s_flag_bigger: std_logic;
+    signal s_flag_carry_out: std_logic;
+
+
+    -- Sinais
     
     signal maquina_estados_s: unsigned(1 downto 0);
     signal pc_value_s: unsigned(6 downto 0);
@@ -96,6 +107,9 @@ begin
     uc_inst: uc port map(
         clk => clk,
         rst => reset,
+        flag_zero => s_flag_zero,
+        flag_bigger => s_flag_bigger,
+        flag_carry_out => s_flag_carry_out,
         codigo_operacao => instrucao_s,
         maquina_estados_out => maquina_estados_s,
         pc_value_o => pc_value_s,
@@ -124,9 +138,9 @@ begin
         rst => reset,
         acumulador_source => control_mux_pre_acumulador,
         wr_enable => en_acumulador_s,
-        flag_zero => open,
-        flag_bigger => open,
-        flag_equals => open,
+        flag_zero => s_flag_zero,
+        flag_bigger => s_flag_bigger,
+        carry_out => s_flag_carry_out,
         op => std_logic_vector(op_ula_s),
         acumulador_value => data_acumulador_s,
         data_i => data_reg_s,

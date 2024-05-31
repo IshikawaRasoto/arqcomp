@@ -9,7 +9,7 @@ entity ULA16bits is
 			out_R : out unsigned (15 downto 0);
 			flag_zero : out std_logic;
 			flag_bigger : out std_logic;
-			flag_equals : out std_logic
+			carry_out : out std_logic
 		);
 end entity;
 
@@ -18,8 +18,8 @@ architecture arch_ULA16bits of ULA16bits is
 	component arithmetic is 
 		port(	A : in unsigned (15 downto 0);
 				B : in unsigned (15 downto 0);
-				sum_out : out unsigned (15 downto 0);
-				sub_out : out unsigned (15 downto 0)
+				sum_out : out unsigned (16 downto 0);
+				sub_out : out unsigned (16 downto 0)
 		);
 	end component;
 
@@ -41,16 +41,32 @@ architecture arch_ULA16bits of ULA16bits is
 		);
 	end component;
 
-	signal sum_A_B, sub_A_B, and_A_B, or_A_B, signal_R : unsigned (15 downto 0);
+	signal and_A_B, or_A_B, signal_R : unsigned (15 downto 0);
+	signal sum_A_B, sub_A_B : unsigned (16 downto 0);
+	signal A_16 : unsigned (15 downto 0);
+	signal B_16 : unsigned (15 downto 0);
+	signal s_flag_zero : std_logic := '0';
+	signal s_flag_bigger : std_logic := '0';
+	signal carry_sum : std_logic := '0';
+	signal carry_sub : std_logic := '0';
 
 begin
 
-	arit : arithmetic port map (A=>in_A, B=>in_B, sum_out=>sum_A_B, sub_out=>sub_A_B);
-	log : logic port map (A=>in_A, B=>in_B, and_out=>and_A_B, or_out=>or_A_B);
-	mux : mux16x4bits port map (A=>sum_A_B, B=>sub_A_B, C=>and_A_B, D=>or_A_B, op_sel=>in_op_sel, R=>signal_R);
+	A_16 <= in_A;
+	B_16 <= in_B;
 	out_R <= signal_R;	
-	flag_zero <= '1' when signal_R="0000000000000000" else '0';
-	flag_bigger <= '1' when in_A > in_B else '0';
-	flag_equals <= '1' when in_A = in_B else '0';
+	s_flag_zero <= '1' when signal_R="0000000000000000" else '0';
+	s_flag_bigger <= '1' when in_A > in_B else '0';
+
+	flag_zero <= s_flag_zero;
+	flag_bigger <= s_flag_bigger;
+	carry_sum <= '1' when sum_A_B(16)= '1' else '0';
+	carry_sub <= '0' when in_B <= in_A else '1';
+	carry_out <= carry_sum when in_op_sel="00" else carry_sub when in_op_sel="01" else '0';
+	
+	arit : arithmetic port map (A=>A_16, B=>B_16, sum_out=>sum_A_B, sub_out=>sub_A_B);
+	log : logic port map (A=>A_16, B=>B_16, and_out=>and_A_B, or_out=>or_A_B);
+	mux : mux16x4bits port map (A=>sum_A_B(15 downto 0), B=>sub_A_B (15 downto 0), C=>and_A_B, D=>or_A_B, op_sel=>in_op_sel, R=>signal_R);
+	
 
 end architecture;

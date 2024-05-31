@@ -2,7 +2,7 @@
 GHDL = ghdl
 
 # Alvo principal
-all: arithmetic logic registrador16bits mux16x4bits ULA16bits ulaacumuladora bancoRegistradores maqestados rom pc uc calculadora calculadora_tb calculadora_tb_ghw
+all: arithmetic logic registrador16bits mux16x4bits ULA16bits ulaacumuladora bancoRegistradores maqestados rom pc uc micro micro_tb onda
 
 # Regras para compilar cada arquivo VHDL
 arithmetic: arithmetic.vhd
@@ -49,14 +49,13 @@ uc: uc.vhd
 	$(GHDL) -a uc.vhd
 	$(GHDL) -e uc
 
-calculadora: calculadora.vhd
-	$(GHDL) -a calculadora.vhd
-	$(GHDL) -e calculadora
+micro: micro.vhd
+	$(GHDL) -a micro.vhd
+	$(GHDL) -e micro
 
-calculadora_tb: calculadora_tb.vhd
-	$(GHDL) -a calculadora_tb.vhd
-	$(GHDL) -e calculadora_tb
+micro_tb: micro_tb.vhd
+	$(GHDL) -a micro_tb.vhd
+	$(GHDL) -e micro_tb
 
-# gerar arquivo de onda calculadora_tb
-calculadora_tb_ghw: calculadora_tb
-	$(GHDL) -r calculadora_tb --wave=calculadora_tb.ghw
+onda: micro_tb.vhd
+	$(GHDL) -r micro_tb --wave=micro_tb.ghw
