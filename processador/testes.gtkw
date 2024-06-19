@@ -1,0 +1,48 @@
+[*]
+[*] GTKWave Analyzer v3.3.114 (w)1999-2023 BSI
+[*] Wed Jun 19 09:02:08 2024
+[*]
+[dumpfile] "/home/rashira/Documents/utfpr/arqcomp/processador/testes.ghw"
+[dumpfile_mtime] "Wed Jun 19 08:37:58 2024"
+[dumpfile_size] 46946
+[savefile] "/home/rashira/Documents/utfpr/arqcomp/processador/testes.gtkw"
+[timestart] 0
+[size] 1920 985
+[pos] -1 -1
+*-25.156326 21150000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.micro_tb.
+[treeopen] top.micro_tb.micro_inst.
+[treeopen] top.micro_tb.micro_inst.bancoreg_inst.
+[treeopen] top.micro_tb.micro_inst.uc_inst.
+[sst_width] 297
+[signals_width] 232
+[sst_expanded] 1
+[sst_vpaned_height] 291
+@28
+top.micro_tb.clk
+top.micro_tb.rst
+top.micro_tb.micro_inst.s_flag_bigger
+top.micro_tb.micro_inst.s_flag_zero
+top.micro_tb.micro_inst.s_flag_carry_out
+top.micro_tb.micro_inst.en_ram
+@22
+#{top.micro_tb.ula_out[15:0]} top.micro_tb.ula_out[15] top.micro_tb.ula_out[14] top.micro_tb.ula_out[13] top.micro_tb.ula_out[12] top.micro_tb.ula_out[11] top.micro_tb.ula_out[10] top.micro_tb.ula_out[9] top.micro_tb.ula_out[8] top.micro_tb.ula_out[7] top.micro_tb.ula_out[6] top.micro_tb.ula_out[5] top.micro_tb.ula_out[4] top.micro_tb.ula_out[3] top.micro_tb.ula_out[2] top.micro_tb.ula_out[1] top.micro_tb.ula_out[0]
+@24
+#{top.micro_tb.pc_value[6:0]} top.micro_tb.pc_value[6] top.micro_tb.pc_value[5] top.micro_tb.pc_value[4] top.micro_tb.pc_value[3] top.micro_tb.pc_value[2] top.micro_tb.pc_value[1] top.micro_tb.pc_value[0]
+@22
+#{top.micro_tb.micro_inst.data_acumulador_s[15:0]} top.micro_tb.micro_inst.data_acumulador_s[15] top.micro_tb.micro_inst.data_acumulador_s[14] top.micro_tb.micro_inst.data_acumulador_s[13] top.micro_tb.micro_inst.data_acumulador_s[12] top.micro_tb.micro_inst.data_acumulador_s[11] top.micro_tb.micro_inst.data_acumulador_s[10] top.micro_tb.micro_inst.data_acumulador_s[9] top.micro_tb.micro_inst.data_acumulador_s[8] top.micro_tb.micro_inst.data_acumulador_s[7] top.micro_tb.micro_inst.data_acumulador_s[6] top.micro_tb.micro_inst.data_acumulador_s[5] top.micro_tb.micro_inst.data_acumulador_s[4] top.micro_tb.micro_inst.data_acumulador_s[3] top.micro_tb.micro_inst.data_acumulador_s[2] top.micro_tb.micro_inst.data_acumulador_s[1] top.micro_tb.micro_inst.data_acumulador_s[0]
+@29
+top.micro_tb.micro_inst.uc_inst.exception
+@22
+#{top.micro_tb.micro_inst.bancoreg_inst.s_06[15:0]} top.micro_tb.micro_inst.bancoreg_inst.s_06[15] top.micro_tb.micro_inst.bancoreg_inst.s_06[14] top.micro_tb.micro_inst.bancoreg_inst.s_06[13] top.micro_tb.micro_inst.bancoreg_inst.s_06[12] top.micro_tb.micro_inst.bancoreg_inst.s_06[11] top.micro_tb.micro_inst.bancoreg_inst.s_06[10] top.micro_tb.micro_inst.bancoreg_inst.s_06[9] top.micro_tb.micro_inst.bancoreg_inst.s_06[8] top.micro_tb.micro_inst.bancoreg_inst.s_06[7] top.micro_tb.micro_inst.bancoreg_inst.s_06[6] top.micro_tb.micro_inst.bancoreg_inst.s_06[5] top.micro_tb.micro_inst.bancoreg_inst.s_06[4] top.micro_tb.micro_inst.bancoreg_inst.s_06[3] top.micro_tb.micro_inst.bancoreg_inst.s_06[2] top.micro_tb.micro_inst.bancoreg_inst.s_06[1] top.micro_tb.micro_inst.bancoreg_inst.s_06[0]
+#{top.micro_tb.micro_inst.bancoreg_inst.s_05[15:0]} top.micro_tb.micro_inst.bancoreg_inst.s_05[15] top.micro_tb.micro_inst.bancoreg_inst.s_05[14] top.micro_tb.micro_inst.bancoreg_inst.s_05[13] top.micro_tb.micro_inst.bancoreg_inst.s_05[12] top.micro_tb.micro_inst.bancoreg_inst.s_05[11] top.micro_tb.micro_inst.bancoreg_inst.s_05[10] top.micro_tb.micro_inst.bancoreg_inst.s_05[9] top.micro_tb.micro_inst.bancoreg_inst.s_05[8] top.micro_tb.micro_inst.bancoreg_inst.s_05[7] top.micro_tb.micro_inst.bancoreg_inst.s_05[6] top.micro_tb.micro_inst.bancoreg_inst.s_05[5] top.micro_tb.micro_inst.bancoreg_inst.s_05[4] top.micro_tb.micro_inst.bancoreg_inst.s_05[3] top.micro_tb.micro_inst.bancoreg_inst.s_05[2] top.micro_tb.micro_inst.bancoreg_inst.s_05[1] top.micro_tb.micro_inst.bancoreg_inst.s_05[0]
+#{top.micro_tb.micro_inst.bancoreg_inst.s_04[15:0]} top.micro_tb.micro_inst.bancoreg_inst.s_04[15] top.micro_tb.micro_inst.bancoreg_inst.s_04[14] top.micro_tb.micro_inst.bancoreg_inst.s_04[13] top.micro_tb.micro_inst.bancoreg_inst.s_04[12] top.micro_tb.micro_inst.bancoreg_inst.s_04[11] top.micro_tb.micro_inst.bancoreg_inst.s_04[10] top.micro_tb.micro_inst.bancoreg_inst.s_04[9] top.micro_tb.micro_inst.bancoreg_inst.s_04[8] top.micro_tb.micro_inst.bancoreg_inst.s_04[7] top.micro_tb.micro_inst.bancoreg_inst.s_04[6] top.micro_tb.micro_inst.bancoreg_inst.s_04[5] top.micro_tb.micro_inst.bancoreg_inst.s_04[4] top.micro_tb.micro_inst.bancoreg_inst.s_04[3] top.micro_tb.micro_inst.bancoreg_inst.s_04[2] top.micro_tb.micro_inst.bancoreg_inst.s_04[1] top.micro_tb.micro_inst.bancoreg_inst.s_04[0]
+#{top.micro_tb.micro_inst.bancoreg_inst.s_03[15:0]} top.micro_tb.micro_inst.bancoreg_inst.s_03[15] top.micro_tb.micro_inst.bancoreg_inst.s_03[14] top.micro_tb.micro_inst.bancoreg_inst.s_03[13] top.micro_tb.micro_inst.bancoreg_inst.s_03[12] top.micro_tb.micro_inst.bancoreg_inst.s_03[11] top.micro_tb.micro_inst.bancoreg_inst.s_03[10] top.micro_tb.micro_inst.bancoreg_inst.s_03[9] top.micro_tb.micro_inst.bancoreg_inst.s_03[8] top.micro_tb.micro_inst.bancoreg_inst.s_03[7] top.micro_tb.micro_inst.bancoreg_inst.s_03[6] top.micro_tb.micro_inst.bancoreg_inst.s_03[5] top.micro_tb.micro_inst.bancoreg_inst.s_03[4] top.micro_tb.micro_inst.bancoreg_inst.s_03[3] top.micro_tb.micro_inst.bancoreg_inst.s_03[2] top.micro_tb.micro_inst.bancoreg_inst.s_03[1] top.micro_tb.micro_inst.bancoreg_inst.s_03[0]
+#{top.micro_tb.micro_inst.bancoreg_inst.s_02[15:0]} top.micro_tb.micro_inst.bancoreg_inst.s_02[15] top.micro_tb.micro_inst.bancoreg_inst.s_02[14] top.micro_tb.micro_inst.bancoreg_inst.s_02[13] top.micro_tb.micro_inst.bancoreg_inst.s_02[12] top.micro_tb.micro_inst.bancoreg_inst.s_02[11] top.micro_tb.micro_inst.bancoreg_inst.s_02[10] top.micro_tb.micro_inst.bancoreg_inst.s_02[9] top.micro_tb.micro_inst.bancoreg_inst.s_02[8] top.micro_tb.micro_inst.bancoreg_inst.s_02[7] top.micro_tb.micro_inst.bancoreg_inst.s_02[6] top.micro_tb.micro_inst.bancoreg_inst.s_02[5] top.micro_tb.micro_inst.bancoreg_inst.s_02[4] top.micro_tb.micro_inst.bancoreg_inst.s_02[3] top.micro_tb.micro_inst.bancoreg_inst.s_02[2] top.micro_tb.micro_inst.bancoreg_inst.s_02[1] top.micro_tb.micro_inst.bancoreg_inst.s_02[0]
+#{top.micro_tb.micro_inst.bancoreg_inst.s_01[15:0]} top.micro_tb.micro_inst.bancoreg_inst.s_01[15] top.micro_tb.micro_inst.bancoreg_inst.s_01[14] top.micro_tb.micro_inst.bancoreg_inst.s_01[13] top.micro_tb.micro_inst.bancoreg_inst.s_01[12] top.micro_tb.micro_inst.bancoreg_inst.s_01[11] top.micro_tb.micro_inst.bancoreg_inst.s_01[10] top.micro_tb.micro_inst.bancoreg_inst.s_01[9] top.micro_tb.micro_inst.bancoreg_inst.s_01[8] top.micro_tb.micro_inst.bancoreg_inst.s_01[7] top.micro_tb.micro_inst.bancoreg_inst.s_01[6] top.micro_tb.micro_inst.bancoreg_inst.s_01[5] top.micro_tb.micro_inst.bancoreg_inst.s_01[4] top.micro_tb.micro_inst.bancoreg_inst.s_01[3] top.micro_tb.micro_inst.bancoreg_inst.s_01[2] top.micro_tb.micro_inst.bancoreg_inst.s_01[1] top.micro_tb.micro_inst.bancoreg_inst.s_01[0]
+@28
+top.micro_tb.micro_inst.ula_inst.flag_subb
+top.micro_tb.micro_inst.uc_inst.s_flag_carry_out
+[pattern_trace] 1
+[pattern_trace] 0
