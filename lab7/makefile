@@ -2,7 +2,7 @@
 GHDL = ghdl
 
 # Alvo principal
-all: arithmetic logic registrador16bits mux16x4bits ULA16bits ulaacumuladora bancoRegistradores maqestados rom ram pc uc micro micro_tb onda
+all: arithmetic logic registrador16bits mux16x4bits ULA16bits ulaacumuladora bancoRegistradores maqestados ram rom pc uc micro micro_tb onda
 
 # Regras para compilar cada arquivo VHDL
 arithmetic: arithmetic.vhd

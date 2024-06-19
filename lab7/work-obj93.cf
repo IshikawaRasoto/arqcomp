@@ -1,40 +1,43 @@
 v 4
-file . "micro_tb.vhd" "2b848fb436a45e22ef9eb659e79eed4d5ef7ad59" "20240531032744.251":
-  entity micro_tb at 1( 0) + 0 on 469;
-  architecture sim of micro_tb at 8( 111) + 0 on 470;
-file . "pc.vhd" "fee1808b059882ac5992fe990388dcfd1fbc5be4" "20240531032744.184":
-  entity pc at 1( 0) + 0 on 463;
-  architecture arch_pc of pc at 15( 258) + 0 on 464;
-file . "maqestados.vhd" "0636a365b6f3a813711c8eb641958c97e1b67e59" "20240531032744.148":
-  entity maqestados at 1( 0) + 0 on 459;
-  architecture arch_maqestados of maqestados at 13( 199) + 0 on 460;
-file . "ulaacumuladora.vhd" "50531b768cbd944e1c6f34bf254e09f666f26949" "20240531032744.108":
-  entity ulaacumuladora at 1( 0) + 0 on 455;
-  architecture arch_ulaacumuladora of ulaacumuladora at 21( 578) + 0 on 456;
-file . "mux16x4bits.vhd" "d1873b15cdfd35a84a523b7b43400b09aa71b42c" "20240531032744.069":
-  entity mux16x4bits at 1( 0) + 0 on 451;
-  architecture arch_mux16x4bits of mux16x4bits at 15( 321) + 0 on 452;
-file . "logic.vhd" "6ce534c36cbe7b7d7c9d3ba249b11aefa300a0ed" "20240531032744.034":
-  entity logic at 1( 0) + 0 on 447;
-  architecture arch_logic of logic at 13( 255) + 0 on 448;
-file . "arithmetic.vhd" "b7720005a42c7a2b2e90e2fde643b222940e59d1" "20240531032744.015":
-  entity arithmetic at 4( 41) + 0 on 445;
-  architecture arch_arithmetic of arithmetic at 16( 301) + 0 on 446;
-file . "registrador16bits.vhd" "463aeecd5d53154623bdf2b4f8be591e50d184d2" "20240531032744.052":
-  entity registrador16bits at 1( 0) + 0 on 449;
-  architecture arq_registrador16bits of registrador16bits at 15( 318) + 0 on 450;
-file . "ULA16bits.vhd" "8474d37f3094d2ee1d519e7b4b29c5067fcaff69" "20240531032744.088":
-  entity ula16bits at 1( 0) + 0 on 453;
-  architecture arch_ula16bits of ula16bits at 16( 357) + 0 on 454;
-file . "bancoRegistradores.vhd" "3a31a111360a47090a50419cb9becda6c0ac1a8a" "20240531032744.128":
-  entity bancoregistradores at 1( 0) + 0 on 457;
-  architecture arq_bancoregistradores of bancoregistradores at 17( 439) + 0 on 458;
-file . "rom.vhd" "2da5969c5b09bb3be32145f552587c49992ed28c" "20240531032744.166":
-  entity rom at 1( 0) + 0 on 461;
-  architecture arc_rom of rom at 14( 251) + 0 on 462;
-file . "uc.vhd" "2644dd37299c51deddb49c2b2beeb0b3527d1d4e" "20240531032744.202":
-  entity uc at 1( 0) + 0 on 465;
-  architecture arch_uc of uc at 32( 820) + 0 on 466;
-file . "micro.vhd" "f2496bf75e6813e121d6131c28bfd0d709b34439" "20240531032744.223":
-  entity micro at 1( 0) + 0 on 467;
-  architecture arch_micro of micro at 18( 451) + 0 on 468;
+file . "micro_tb.vhd" "2b848fb436a45e22ef9eb659e79eed4d5ef7ad59" "20240619031647.644":
+  entity micro_tb at 1( 0) + 0 on 233;
+  architecture sim of micro_tb at 8( 111) + 0 on 234;
+file . "uc.vhd" "a1fae7e846c2c74188130dab4647c8c57b9b4834" "20240619031647.584":
+  entity uc at 1( 0) + 0 on 229;
+  architecture arch_uc of uc at 34( 924) + 0 on 230;
+file . "rom.vhd" "c93e33b5bd2afbbf84a357771feb5c5bc9574f14" "20240619031647.538":
+  entity rom at 1( 0) + 0 on 225;
+  architecture arc_rom of rom at 14( 251) + 0 on 226;
+file . "maqestados.vhd" "0636a365b6f3a813711c8eb641958c97e1b67e59" "20240619031647.494":
+  entity maqestados at 1( 0) + 0 on 221;
+  architecture arch_maqestados of maqestados at 13( 199) + 0 on 222;
+file . "ulaacumuladora.vhd" "50531b768cbd944e1c6f34bf254e09f666f26949" "20240619031647.445":
+  entity ulaacumuladora at 1( 0) + 0 on 217;
+  architecture arch_ulaacumuladora of ulaacumuladora at 21( 578) + 0 on 218;
+file . "mux16x4bits.vhd" "d1873b15cdfd35a84a523b7b43400b09aa71b42c" "20240619031647.397":
+  entity mux16x4bits at 1( 0) + 0 on 213;
+  architecture arch_mux16x4bits of mux16x4bits at 15( 321) + 0 on 214;
+file . "logic.vhd" "6ce534c36cbe7b7d7c9d3ba249b11aefa300a0ed" "20240619031647.353":
+  entity logic at 1( 0) + 0 on 209;
+  architecture arch_logic of logic at 13( 255) + 0 on 210;
+file . "arithmetic.vhd" "b7720005a42c7a2b2e90e2fde643b222940e59d1" "20240619031647.330":
+  entity arithmetic at 4( 41) + 0 on 207;
+  architecture arch_arithmetic of arithmetic at 16( 301) + 0 on 208;
+file . "registrador16bits.vhd" "463aeecd5d53154623bdf2b4f8be591e50d184d2" "20240619031647.375":
+  entity registrador16bits at 1( 0) + 0 on 211;
+  architecture arq_registrador16bits of registrador16bits at 15( 318) + 0 on 212;
+file . "ULA16bits.vhd" "8474d37f3094d2ee1d519e7b4b29c5067fcaff69" "20240619031647.421":
+  entity ula16bits at 1( 0) + 0 on 215;
+  architecture arch_ula16bits of ula16bits at 16( 357) + 0 on 216;
+file . "bancoRegistradores.vhd" "80b0cb7b7bb17a3017142a7bd9b4b6408f91ae3f" "20240619031647.470":
+  entity bancoregistradores at 1( 0) + 0 on 219;
+  architecture arq_bancoregistradores of bancoregistradores at 19( 553) + 0 on 220;
+file . "ram.vhd" "964e66ae2d2873d1f9052fa224e3bd08dd992856" "20240619031647.516":
+  entity ram at 1( 0) + 0 on 223;
+  architecture arch_ram of ram at 16( 346) + 0 on 224;
+file . "pc.vhd" "fee1808b059882ac5992fe990388dcfd1fbc5be4" "20240619031647.561":
+  entity pc at 1( 0) + 0 on 227;
+  architecture arch_pc of pc at 15( 258) + 0 on 228;
+file . "micro.vhd" "3d2dd2d7609e10040b1c64987a7954e5971ddb3c" "20240619031647.609":
+  entity micro at 1( 0) + 0 on 231;
+  architecture arch_micro of micro at 18( 451) + 0 on 232;

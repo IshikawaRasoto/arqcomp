@@ -9,8 +9,10 @@ entity bancoRegistradores is
         rst: in std_logic;
         write_data: in std_logic_vector(15 downto 0);
         read_data_1: out std_logic_vector(15 downto 0);
+        read_data_2: out std_logic_vector(15 downto 0);
         write_register: in std_logic_vector(2 downto 0);
-        read_register_1: in std_logic_vector(2 downto 0)
+        read_register_1: in std_logic_vector(2 downto 0);
+        read_register_2: in std_logic_vector(2 downto 0)
     );
 end entity;
 
@@ -61,5 +63,14 @@ architecture arq_bancoRegistradores of bancoRegistradores is
                        S_06 when read_register_1 = "110" else
                        S_07;
 
+        -- Mux para a Saida 2
+        read_data_2 <= S_00 when read_register_2 = "000" else
+                       S_01 when read_register_2 = "001" else
+                       S_02 when read_register_2 = "010" else
+                       S_03 when read_register_2 = "011" else
+                       S_04 when read_register_2 = "100" else
+                       S_05 when read_register_2 = "101" else
+                       S_06 when read_register_2 = "110" else
+                       S_07;
 
 end architecture;

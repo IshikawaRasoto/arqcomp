@@ -18,6 +18,7 @@ entity uc is
         const_to_regs : out unsigned(15 downto 0);
 
         read_add_reg : out unsigned(2 downto 0);
+        read_add_2_reg : out unsigned(2 downto 0);
         write_add_reg : out unsigned(2 downto 0);
         op_ula : out unsigned(1 downto 0);
 
@@ -26,7 +27,7 @@ entity uc is
         en_ram : out std_logic;
 
         mux_s_acumulador_o : out std_logic;
-        mux_s_regs_o : out std_logic
+        mux_s_regs_o : out std_logic_vector(1 downto 0)
     );
 end entity uc;
 
@@ -118,8 +119,11 @@ begin
     -- Unidade de Controle
 
     const_s <= data_out_rom(7 downto 0);
+
     read_add <= data_out_rom(7 downto 4);
+    
     write_add <= data_out_rom(11 downto 8);
+
     operation <= data_out_rom(15 downto 12);
     
     
@@ -133,9 +137,10 @@ begin
     read_add_reg <= "000" when read_add (3 downto 0) = "1010" or -- Accumulator
                                operation = "1010" or --BSM
                                operation = "1011" or --BBG
-                               operation = "1100" or --BEQ
-                               operation = "1101" -- LW
+                               operation = "1100" --BEQ
                                else read_add (2 downto 0);
+
+    read_add_2_reg <= data_out_rom(2 downto 0) when operation = "1110" or operation = "1101" else "000";
 
     write_add_reg <= "000" when write_add (3 downto 0) = "1010" or -- Accumulator
                                 operation = "1010" or --BSM
@@ -153,7 +158,7 @@ begin
     -- Enables
     en_rom <= '1' when (maqestados_s = "00") else '0';
     
-    en_reg <= '1' when (maqestados_s = "01")  and (operation = "0001" or operation = "0010") else '0';
+    en_reg <= '1' when (maqestados_s = "01")  and (operation = "0001" or operation = "0010" or operation = "1101") else '0';
     
     en_acumulador <= '1' when maqestados_s = "01" and ((write_add = "1010")
                     or (operation = "0011" or operation = "0100" or operation = "0101" or operation = "0110"))
@@ -163,6 +168,8 @@ begin
     
     en_reg_flags <= '1' when maqestados_s = "01" and operation = "1000" else '0';
 
+    en_ram <= '1' when maqestados_s = "01" and (operation = "1110")  else '0';
+
     -- PC MUX
     jmp_address <= const_s(6 downto 0);
     relative_jmp_address <= data_out_pc + const_s(6 downto 0);
@@ -170,13 +177,16 @@ begin
                      '1' when operation = "1011" and s_flag_bigger = '1' else
                      '1' when operation = "1100" and s_flag_zero = '1' 
                     else '0';
+
     mux_pc <= jmp_address when operation = "1001" 
             else relative_jmp_address when relative_flag = '1'
             else increment;
 
     --MUXs
     mux_s_acumulador_o <= '1' when operation = "0001" else '0';
-    mux_s_regs_o <= '1' when operation = "0001" else '0';
+    mux_s_regs_o <= "01" when operation = "0001" else 
+                    "10" when operation = "1101" else
+                    "00";
     
     -- Registradores
     in_reg_flags <= B"0000_0000_0000_0" & flag_zero & flag_bigger & flag_carry_out;
